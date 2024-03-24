@@ -4,6 +4,7 @@ const nextConfig = {
   output: 'export',
   //Add remote origins for image
   images: {
+    unoptimized: true,
     remotePatterns: [{
       protocol: "https",
       hostname: "raw.githubusercontent.com"
