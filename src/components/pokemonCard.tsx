@@ -60,7 +60,7 @@ export default function PokemonCard({name} : {name: string}) {
                     <figcaption style={{color: 'grey', alignItems: 'left'}}>{"N.° " + pokemon.id}</figcaption>
                     <h3 className="text-center text-capitalize">{pokemon.name}</h3>
                     {pokemon.types.map(type => (
-                        <Button variant="secondary" className={"capitalize " + type.type.name}>{type.type.name}</Button>
+                        <Button key={type.type.name} variant="secondary" className={"capitalize " + type.type.name}>{type.type.name}</Button>
                     ))}
                 </div>
             </div>

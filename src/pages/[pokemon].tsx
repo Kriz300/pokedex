@@ -113,7 +113,7 @@ export default function PokemonDetailsPage(){
                         <div>
                             <strong>Types:</strong>
                             {pokemon.types.map(type => (
-                                <Button variant="secondary" className={"capitalize " + type.type.name}>{type.type.name}</Button>
+                                <Button key={type.type.name} variant="secondary" className={"capitalize " + type.type.name}>{type.type.name}</Button>
                             ))}
                         </div>
                         <div><strong>Height:</strong>{pokemon.height / 10} m</div>
