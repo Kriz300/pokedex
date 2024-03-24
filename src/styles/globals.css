@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/body_bg.png');
+}
+
+a {
+    text-decoration: none;
+}
+
+.none {
+    text-decoration: none;
+    color: black;
+}
+
+.background-container {
+    height: 100%;
+    position: center;
+    background-color: white;
+    background-image: url('/container_bg.png');
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container {
+    position: center;
+    background-color: rgb(50, 50, 50);
+}
+
+.grid-container {
+    background-color: white;
+    width: 80%;
+    position: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.grass, .grass:hover {
+    color: black;
+    background-color: #02d024;
+    border: none;
+}
+
+.poison, .poison:hover {
+    color: white;
+    background-color: rgb(202, 64, 202);
+    border: none;
+}
+
+.psychic, .psychic:hover {
+    color: white;
+    background-color: rgba(195, 64, 195, 0.502);
+    border: none;
+}
+
+.ghost, .ghost:hover {
+    color: white;
+    background-color: rgb(227, 44, 227);
+    border: none;
+}
+
+.fire, .fire:hover {
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+.fighting, .fighting:hover {
+    color: white;
+    background-color: rgb(186, 32, 32);
+    border: none;
+}
+
+.water, .water:hover {
+    color: white;
+    background-color: #3575f5;
+    border: none;
+}
+
+.ice, .ice:hover {
+    color: black;
+    background-color: #00d9ff;
+    border: none;
+}
+
+.bug, .bug:hover {
+    color: white;
+    background-color: #05971dd6;
+    border: none;
+}
+
+.normal, .normal:hover {
+    color: white;
+    background-color: grey;
+    border: none;
+}
+
+.electric, .electric:hover {
+    color: white;
+    background-color: rgb(200, 200, 36);
+    border: none;
+}
+
+.fairy, .fairy:hover {
+    color: white;
+    background-color: pink;
+    border: none;
+}
+
+.rock, .rock:hover {
+    color: white;
+    background-color: rgb(166, 166, 38);
+    border: none;
+}
+
+.steel, .steel:hover {
+    color: black;
+    background-color: rgb(167, 195, 198);
+    border: none;
+}
+
+.dark, .dark:hover {
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.flying, .flying:hover {
+    color: white;
+    background-image: linear-gradient(to bottom, #1eaaf1 50%, grey 50%);
+    border: none;
+}
+
+.dragon, .dragon:hover {
+    color: white;
+    background-image: linear-gradient(to bottom, #008ed5 50%, rgb(233, 92, 22) 50%);
+    border: none;
+}
+
+.ground, .ground:hover {
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(200, 200, 36) 50%, rgba(200, 200, 36, 0.483) 50%);
+    border: none;
+}
