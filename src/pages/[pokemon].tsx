@@ -91,12 +91,12 @@ export default function PokemonDetailsPage(){
         <div className="d-flex flex-column align-items-center background-container">
             <div className="grid-container">
                 <center>
-                <Link href={`/`} className="none"><h1>Pokédex</h1></Link>
+                <Link key="home" href={`/`} className="none"><h1>Pokédex</h1></Link>
                 <div className="py-4">
                 {pokemon_prev && pokemon_next &&
                     <>
-                    <Link href={pokemon_prev.name}><Button variant="secondary" className="capitalize">{"N.° " + pokemon_prev.id + " " + pokemon_prev.name}</Button></Link>
-                    <Link href={pokemon_next.name}><Button variant="secondary" className="capitalize">{pokemon_next.name + " " + "N.° " + pokemon_next.id}</Button></Link>
+                    <Link key={"Link_" + pokemon_prev.id} href={pokemon_prev.name}><Button key={"Button" + pokemon_prev.id} variant="secondary" className="capitalize">{"N.° " + pokemon_prev.id + " " + pokemon_prev.name}</Button></Link>
+                    <Link key={"Link_" + pokemon_next.id} href={pokemon_next.name}><Button key={"Button" + pokemon_prev.id} variant="secondary" className="capitalize">{pokemon_next.name + " " + "N.° " + pokemon_next.id}</Button></Link>
                     </>
                 }
                 </div>
