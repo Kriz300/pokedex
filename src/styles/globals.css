@@ -33,21 +33,46 @@ a {
     align-items: center;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
+/*Search Bar*/
 .filter-container {
     position: center;
     background-color: rgb(50, 50, 50);
 }
 
+.cuadrado {
+    border-radius: 25px;
+    padding-top: 5px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 13vh;
+    margin-right: 13vh;
+    position:relative;
+    background-color:green;
+    text-align: center;
+    display: inline-block;
+}
+
+.text-box {
+    font-size: 17px;
+    padding: 1vh;
+}
+
+.search {
+    margin-left: 100px;
+}
+
+/*Pokemon grid*/
 .grid-container {
     background-color: white;
     width: 80%;
     position: center;
 }
 
-.capitalize {
-    text-transform: capitalize;
-}
-
+/*Type buttons for each pokemon element*/
 .grass, .grass:hover {
     color: black;
     background-color: #02d024;

@@ -56,12 +56,14 @@ export default function PokemonCard({name} : {name: string}) {
                         />
                     </Link>
                 </div>
-                <div className="py-2" style={{alignItems: 'left'}}>
-                    <figcaption style={{color: 'grey', alignItems: 'left'}}>{"N.° " + pokemon.id}</figcaption>
-                    <h3 className="text-center text-capitalize">{pokemon.name}</h3>
-                    {pokemon.types.map((type, index) => (
-                        <Button key={index} variant="secondary" className={"capitalize " + type.type.name}>{type.type.name}</Button>
-                    ))}
+                <div className="py-2" style={{alignContent: 'left'}}>
+                    <figcaption style={{color: 'grey', textAlign: 'left'}}>{"N.° " + (pokemon.id).toString().padStart(4, "0")}</figcaption>
+                    <div style={{textAlign: 'left'}}>
+                        <p className="text-capitalize" style={{fontSize:'30px', fontWeight:'500', marginBottom:'0'}}>{pokemon.name}</p>
+                        {pokemon.types.map((type, index) => (
+                            <Button key={index} variant="secondary" size="sm" className={"capitalize " + type.type.name} style={{marginRight:'5px', paddingLeft:'30px', paddingRight:'30px',}}>{type.type.name}</Button>
+                        ))}
+                    </div>
                 </div>
             </div>
             }

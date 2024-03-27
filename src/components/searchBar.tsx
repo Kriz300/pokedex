@@ -1,6 +1,6 @@
 //Basic imports
 import { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 
 interface SearchBarProps {
   onSearch: (searchTerm: string) => void;
@@ -22,16 +22,28 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} style={{ color: 'white' }}>
-            <p>Nombre o número</p>
-            <input
-                type="text"
-                value={searchTerm}
-                onChange={handleChange}
-            />
-            <Button variant='danger' type="submit">Search</Button>
-            <p className='subtitle'>¡Usa la búsqueda avanzada para encontrar Pokémon por su tipo, debilidad, habilidad y demás datos!</p>
-        </form>
+        <center>
+        <Row style={{ color: 'white' }}>
+            <Col className='search'>
+                <form onSubmit={handleSubmit}>
+                    <h4 style={{ paddingTop: '15px' }}>Nombre o número</h4>
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        onChange={handleChange}
+                        style={{ margin: '10px', padding: '5px' }}
+                    />
+                    <Button variant='danger' type="submit">Search</Button>
+                    <p className='subtitle' style={{fontSize:'15px'}}>¡Usa la búsqueda avanzada para encontrar Pokémon por su tipo, debilidad, habilidad y demás datos!</p>
+                </form>
+            </Col>
+            <Col className='search'>
+                <div className='cuadrado'>
+                    <p className='text-box'>Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional.</p>
+                </div>
+            </Col>
+        </Row>
+        </center>
     );
 };
 

@@ -98,7 +98,7 @@ export default function Home() {
                 <div className="py-4 d-flex justify-content-center">
                     <Button style={{ fontSize: '1.75em', padding: '10px 20px' }} onClick={() => handleSearch("Random")}>¡Sorprendeme!</Button>
                 </div>
-                <Row sm={4}>
+                <Row>
                     {pokemon && pokemonPage && isSearched ? (
                         <Col key={pokemon?.name}>
                             <PokemonCard name={pokemon?.name} />
